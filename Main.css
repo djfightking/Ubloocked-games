@@ -11,3 +11,9 @@ header {
     margin-right: 20px; /* Add margin between the images */
     vertical-align: top; /* Align images at the top */
 }
+
+.image-container2 {
+    display: inline-block; /* Display images beside each other */
+    margin-right: 20px; /* Add margin between the images */
+    vertical-align: top; /* Align images at the top */
+}
