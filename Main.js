@@ -17,17 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         chatContainer.appendChild(messageElement);
         saveMessage(message, "user");
         scrollToBottom();
-        receiveBotResponse(message);
-    }
-
-    function receiveBotResponse(userMessage) {
-        setTimeout(function() {
-            const botResponse = "This is a bot response. You said: " + userMessage;
-            const messageElement = createMessageElement(botResponse, "bot-message");
-            chatContainer.appendChild(messageElement);
-            saveMessage(botResponse, "bot");
-            scrollToBottom();
-        }, 1000);
     }
 
     function createMessageElement(message, className) {
