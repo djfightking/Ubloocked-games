@@ -1,0 +1,15 @@
+/* enemy.css */
+
+.health-bar {
+    width: 100%; /* Adjust width as needed */
+    height: 5px; /* Adjust height as needed */
+    background-color: green; /* Set initial health bar color */
+}
+
+.enemy {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color: red; /* Set background color to red */
+    position: absolute; /* Position the enemy element */
+    /* Add any other styles for the enemy element */
+}
