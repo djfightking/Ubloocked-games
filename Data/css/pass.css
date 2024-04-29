@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div {
+    text-align: center;
+}
+
+#categoryInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 16px;
+}

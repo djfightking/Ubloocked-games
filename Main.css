@@ -6,6 +6,21 @@ body {
 
 header {
     background-color: rgba(80, 134, 138, 0.315);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it appears above other content */
+    padding: 15px 0; /* Add padding to the top and bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    text-align: center; /* Center align text */
+}
+
+header h1 {
+    color: #333; /* Change text color */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 24px; /* Increase font size */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Add letter spacing */
+    margin: 0; /* Remove margin */
 }
 
 .image-container {

@@ -39,3 +39,4 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Message from " + sender + ": " + message);
     }
 });
+
