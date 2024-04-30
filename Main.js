@@ -10,3 +10,4 @@ closeButton.addEventListener("click", function() {
     // Hide the message box when the close button is clicked
     messageBox.classList.add("hidden");
 });
+

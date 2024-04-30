@@ -58,3 +58,9 @@ footer {
 .hidden {
     display: none;
 }
+
+#owner {
+    margin-top: -30px; /* Adjust this value to move the h2 element up */
+    margin-right: 10px; /* Optional: Add some right margin */
+    text-align: right;
+}
