@@ -1,0 +1,51 @@
+/* Owner.css */
+
+/* CSS styles for your webpage */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Background color similar to VSCode */
+    color: #d4d4d4; /* Text color similar to VSCode */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between main content and side section */
+    padding: 20px;
+}
+
+#container {
+    display: flex; /* Use flexbox layout for main content and side section */
+}
+
+/* Side Section styles */
+#side-section {
+    width: 200px; /* Set the width of the side section */
+}
+
+#side-section h2 {
+    margin-top: 0;
+}
+
+/* File creation form styles */
+#file-form {
+    margin-top: 10px;
+}
+
+#content {
+    flex-grow: 1; /* Allow content to grow to fill available space */
+    margin-left: 20px; /* Margin between content and side section */
+}
+
+/* Styles for the code editor */
+#code-editor {
+    width: 100%;
+    height: 400px; /* Set the height as you prefer */
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: auto;
+    font-family: 'Fira Code', monospace; /* Use a monospaced font for code */
+    white-space: pre-wrap;
+}
+
+/* Execute button */
+#execute-button {
+    display: block;
+    margin-top: 10px;
+}

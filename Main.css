@@ -60,7 +60,21 @@ footer {
 }
 
 #owner {
-    margin-top: -30px; /* Adjust this value to move the h2 element up */
-    margin-right: 10px; /* Optional: Add some right margin */
+    margin-top: -15px; /* Adjusted margin-top to put it back */
+    margin-right: -1180px;
     text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#owner:hover {
+    background-color: #0056b3;
 }

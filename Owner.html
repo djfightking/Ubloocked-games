@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games</title>
+    <link rel="stylesheet" type="text/css" href="Data/css/Owner.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Side Section for Creating Files -->
+        <div id="side-section">
+            <h2>Create New File</h2>
+            <form id="file-form">
+                <label for="file-name">File Name:</label>
+                <input type="text" id="file-name" name="file-name" required><br>
+                <label for="file-type">File Type:</label>
+                <select id="file-type" name="file-type" required>
+                    <option value="html">HTML</option>
+                    <option value="js">JavaScript</option>
+                    <option value="css">CSS</option>
+                </select><br>
+                <button type="submit">Create File</button>
+            </form>
+        </div>
+        
+        <div id="content">
+            <h1>Welcome</h1>
+
+            <!-- Code Editor -->
+            <pre id="code-editor" contenteditable="true"><code>// Start coding here...
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+console.log(greet("World"));
+</code></pre>
+
+            <!-- Execute Button -->
+            <button id="execute-button">Execute</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="Data/js/Owner.js"></script>
+</body>
+</html>
