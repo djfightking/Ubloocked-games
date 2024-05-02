@@ -1,46 +1,53 @@
+/* Global Styles */
 body {
-    background-color: #0a9b9480; /* Red */
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
+    background-color: #0a9b9480; /* Light blue-green */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Consistent font stack */
 }
 
+/* Header Styles */
 header {
     background-color: rgba(80, 134, 138, 0.315);
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it appears above other content */
-    padding: 15px 0; /* Add padding to the top and bottom */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
-    text-align: center; /* Center align text */
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 header h1 {
-    color: #333; /* Change text color */
-    font-family: 'Arial', sans-serif; /* Change font family */
-    font-size: 24px; /* Increase font size */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 2px; /* Add letter spacing */
-    margin: 0; /* Remove margin */
+    color: #333;
+    font-size: 28px; /* Increased font size for header */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
+/* Image Container Styles */
 .image-container {
     display: inline-block;
-    margin-right: 20px; /* Add margin between the images */
-    vertical-align: top; /* Align images at the top */
+    margin-right: 20px;
+    vertical-align: top;
 }
 
 .image-container2 {
-    display: inline-block; /* Display images beside each other */
-    margin-right: 20px; /* Add margin between the images */
-    vertical-align: top; /* Align images at the top */
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     margin-top: 20px;
+    padding: 10px; /* Added padding for footer */
+    background-color: rgba(80, 134, 138, 0.315); /* Match header background color */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add shadow at the top */
 }
 
-/* CSS for the message box */
+/* Message Box Styles */
 #message-box {
     position: fixed;
     top: 50%;
@@ -54,15 +61,15 @@ footer {
     z-index: 9999;
 }
 
-
 .hidden {
     display: none;
 }
 
+/* Owner Styles */
 #owner {
-    margin-top: -15px; /* Adjusted margin-top to put it back */
-    margin-right: -1000px;
-    text-align: right;
+    position: fixed;
+    top: 10px;
+    right: 10px;
     font-size: 16px;
     font-weight: bold;
     color: #fff;
@@ -72,9 +79,27 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
-    display: inline-block;
+    z-index: 1001; /* Ensure it appears above other content */
 }
 
 #owner:hover {
     background-color: #0056b3;
 }
+
+        /* Style for the circles */
+        .circle {
+            width: 20px; /* Initial width */
+            height: 20px; /* Initial height */
+            background-color: #f0f0f0; /* Light color */
+            position: fixed; /* Fixed position so they move with the screen */
+            border-radius: 50%; /* Make them circles */
+            animation: circleAnimation 5s linear infinite; /* Apply animation for continuous movement */
+            z-index: -1; /* Place behind other content */
+        }
+
+        /* Keyframes for circle animation */
+        @keyframes circleAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }

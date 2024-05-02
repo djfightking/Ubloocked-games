@@ -1,51 +1,42 @@
-/* Owner.css */
-
-/* CSS styles for your webpage */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e; /* Background color similar to VSCode */
-    color: #d4d4d4; /* Text color similar to VSCode */
-    display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Space between main content and side section */
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#container {
-    display: flex; /* Use flexbox layout for main content and side section */
+h1 {
+    text-align: center;
+    color: #333;
 }
 
-/* Side Section styles */
-#side-section {
-    width: 200px; /* Set the width of the side section */
-}
-
-#side-section h2 {
-    margin-top: 0;
-}
-
-/* File creation form styles */
-#file-form {
-    margin-top: 10px;
-}
-
-#content {
-    flex-grow: 1; /* Allow content to grow to fill available space */
-    margin-left: 20px; /* Margin between content and side section */
-}
-
-/* Styles for the code editor */
-#code-editor {
-    width: 100%;
-    height: 400px; /* Set the height as you prefer */
-    border: 1px solid #ccc;
-    padding: 10px;
-    overflow: auto;
-    font-family: 'Fira Code', monospace; /* Use a monospaced font for code */
-    white-space: pre-wrap;
-}
-
-/* Execute button */
-#execute-button {
+#button {
     display: block;
-    margin-top: 10px;
+    width: 150px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #0056b3;
+}
+
+#button:focus {
+    outline: none;
 }
