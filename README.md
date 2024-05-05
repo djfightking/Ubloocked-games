@@ -1,6 +1,11 @@
-<center><h1>Ublocked games</h1></center>
+# Unblocked Game Site Repository
 
-<p>this site was create for me and my friends to play game but feel free to use</p>
+## New Games
 
-<center><h2>iformation</h2></center>
-<p>i try my best to do regular updates and to let you know what is upcoming</p>
+Here are the latest additions to our collection:
+
+- [Game 1](link-to-game1): Description of Game 1.
+- [Game 2](link-to-game2): Description of Game 2.
+- [Game 3](link-to-game3): Description of Game 3.
+
+Feel free to check them out and enjoy!

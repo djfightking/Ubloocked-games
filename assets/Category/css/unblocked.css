@@ -1,0 +1,6 @@
+/* CSS for styling images within buttons */
+img.button-image {
+    width: 150px; /* Set the width */
+    height: 150px; /* Set the height */
+    border-radius: 20%; /* Adjust border radius to make it slightly more square but still round */
+}

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Update</title>
-    <link rel="stylesheet" href="Data/css/pass.css">
+    <title>Password</title>
+    <link rel="stylesheet" href="assets/pass/pass.css">
+    <link rel="stylesheet" href="styles.css"> <!-- New stylesheet for custom styling -->
 </head>
 <body>
-    <div>
-        <input type="password" id="categoryInput" placeholder="Password">
-        <button id="searchButton">Enter</button>
-        <p>Ask Durronjae for password, which may change frequently. Ensure accuracy when typing the password. Use the "Enter" key to submit the password or one on screen.</p>
-    </div>
 
-    <script src="Data/js/pass.js"></script>
+    <div class="password-container">
+        <h2>Enter Password</h2>
+        <input type="password" id="passwordInput" placeholder="Enter your password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    
+    <script src="assets/pass/pass.js"></script>
+    <script src="script.js"></script> <!-- JavaScript file for validation -->
 </body>
 </html>
