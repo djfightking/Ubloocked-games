@@ -1,26 +1,14 @@
-body {
-    margin: 0; /* Remove default margin */
-    font-family: Arial, sans-serif; /* Use a common font */
-}
-
-#game-name, h2 {
-    text-align: center; /* Center-align headings */
-}
-
-#container {
-    max-width: 1200px; /* Set maximum width for the container */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0 20px; /* Add padding to the container */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-}
-
 #game-container {
-    position: relative; /* Relative positioning for absolute button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the container takes the full height of the viewport */
+    position: relative; /* Needed for positioning the button */
 }
 
 #game-frame {
-    width: 100%; /* Make iframe responsive */
-    height: 500px; /* Set initial height */
+    width: 1000px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
     border: 1px solid black; /* Add a 1px solid black border */
     border-radius: 10px; /* Add border radius for rounded corners */
 }
@@ -42,27 +30,19 @@ body {
 }
 
 #info-container {
-    width: 100%; /* Make information area responsive */
+    width: 500px; /* Adjust width as needed */
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     margin-top: 20px; /* Adjust top margin as needed */
+    margin-left: 150px; /* Adjust left margin as needed */
 }
 
-@media (min-width: 768px) {
-    #game-frame {
-        height: 600px; /* Set height for larger screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    #game-container {
-        display: flex; /* Use flexbox for larger screens */
-        justify-content: space-between;
-    }
-
-    #info-container {
-        width: calc(33.33% - 10px); /* Set width for larger screens */
-        margin-left: 20px; /* Add spacing between containers */
-    }
+#instructions {
+    width: 500px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 20px; /* Adjust top margin as needed */
+    margin-left: -20px; /* Adjust left margin as needed */
 }
