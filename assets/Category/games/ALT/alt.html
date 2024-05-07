@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display External Content</title>
+</head>
+<body>
+    <div id="externalContent"></div>
+
+    <script>
+        // Function to fetch content from external HTML file
+        function fetchExternalContent(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        callback(xhr.responseText);
+                    } else {
+                        console.error('Failed to fetch external content: ' + xhr.status);
+                    }
+                }
+            };
+            xhr.open('GET', url, true);
+            xhr.send();
+        }
+
+        // Function to insert fetched content into the specified div
+        function insertContentIntoDiv(content, divId) {
+            var div = document.getElementById(divId);
+            if (div) {
+                div.innerHTML = content;
+            } else {
+                console.error('Div with id ' + divId + ' not found.');
+            }
+        }
+
+        // Call fetchExternalContent function with the URL of the external HTML file
+        var externalUrl = 'ALT-Games/Main-alt.html'; // Change this to the path of your external HTML file
+        fetchExternalContent(externalUrl, function(content) {
+            // Insert the fetched content into the specified div
+            insertContentIntoDiv(content, 'externalContent');
+        });
+    </script>
+</body>
+</html>

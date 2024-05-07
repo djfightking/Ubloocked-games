@@ -1,0 +1,16 @@
+/* Main-alt.css */
+
+/* Styles for the title */
+#main-title {
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 32px; /* Change the font size */
+    color: #333; /* Change the font color */
+    text-align: center; /* Center align the text */
+    margin-top: 20px; /* Add margin on top for spacing */
+}
+
+/* Styles for the images */
+.button-image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
