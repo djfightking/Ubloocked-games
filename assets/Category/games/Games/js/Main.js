@@ -1,25 +1,18 @@
-// JavaScript code for handling fullscreen functionality
-
-// Function to request fullscreen for the game frame
-function requestFullscreen() {
-    const gameFrame = document.getElementById('game-frame');
-    if (gameFrame.requestFullscreen) {
-        gameFrame.requestFullscreen();
-    } else if (gameFrame.mozRequestFullScreen) { /* Firefox */
-        gameFrame.mozRequestFullScreen();
-    } else if (gameFrame.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-        gameFrame.webkitRequestFullscreen();
-    } else if (gameFrame.msRequestFullscreen) { /* IE/Edge */
-        gameFrame.msRequestFullscreen();
+// JavaScript to toggle fullscreen mode
+const gameFrame = document.getElementById('game-frame');
+const fullscreenBtn = document.getElementById('fullscreen-btn');
+const altFullscreenBtn = document.createElement('button'); // Create a new button element
+altFullscreenBtn.textContent = 'Alt Fullscreen'; // Set the text content of the button
+altFullscreenBtn.classList.add('fullscreen-btn'); // Add a class to the button for styling
+altFullscreenBtn.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+        gameFrame.requestFullscreen().catch(err => {
+            console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+        });
+    } else {
+        document.exitFullscreen();
     }
-}
-
-// Function to toggle fullscreen when the original fullscreen button is clicked
-document.getElementById('fullscreen-btn').addEventListener('click', function() {
-    requestFullscreen();
 });
 
-// Function to toggle fullscreen when the alternative fullscreen button is clicked
-document.getElementById('alt-fullscreen-btn').addEventListener('click', function() {
-    requestFullscreen();
-});
+// Append the altFullscreenBtn to the container
+document.getElementById('container').appendChild(altFullscreenBtn);
