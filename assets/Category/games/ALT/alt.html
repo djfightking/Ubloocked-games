@@ -4,6 +4,12 @@
     <title>Display External Content</title>
 </head>
 <body>
+    <h1 id="main-title">it is back and reverted</h1>
+
+    <button id="revert-button">Normal</button>
+    <button id="alphabetical-order-button">Alphabetical Order (A to Z)</button>
+
+
     <div id="externalContent"></div>
 
     <script>
@@ -33,11 +39,25 @@
             }
         }
 
-        // Call fetchExternalContent function with the URL of the external HTML file
-        var externalUrl = 'ALT-Games/Main-alt.html'; // Change this to the path of your external HTML file
-        fetchExternalContent(externalUrl, function(content) {
-            // Insert the fetched content into the specified div
+        // Load default content when the page loads
+        var defaultUrl = 'ALT-Games/Main-alt.html'; // Replace with the path to your default content
+        fetchExternalContent(defaultUrl, function(content) {
             insertContentIntoDiv(content, 'externalContent');
+        });
+
+        // Function to load content when "Alphabetical Order" button is pressed
+        document.getElementById('alphabetical-order-button').addEventListener('click', function() {
+            var alphabeticalUrl = 'ALT-Games/alphabetical.html'; // Replace with the path to your alphabetical content
+            fetchExternalContent(alphabeticalUrl, function(content) {
+                insertContentIntoDiv(content, 'externalContent');
+            });
+        });
+
+        // Function to revert back to normal content when "Revert" button is pressed
+        document.getElementById('revert-button').addEventListener('click', function() {
+            fetchExternalContent(defaultUrl, function(content) {
+                insertContentIntoDiv(content, 'externalContent');
+            });
         });
     </script>
 </body>

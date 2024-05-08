@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function checkPassword() {
     var enteredPassword = document.getElementById("passwordInput").value;
-    var correctPassword = "91121";
+    var correctPassword = "new1";
     var altPassword = "dj";
 
     if (enteredPassword === correctPassword || enteredPassword === altPassword) {

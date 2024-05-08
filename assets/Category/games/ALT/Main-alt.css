@@ -1,5 +1,10 @@
 /* Main-alt.css */
 
+/* Styles for the body */
+body {
+    background-color: #f2f2f2; /* Set background color */
+}
+
 /* Styles for the title */
 #main-title {
     font-family: Arial, sans-serif; /* Change the font family */
@@ -9,8 +14,38 @@
     margin-top: 20px; /* Add margin on top for spacing */
 }
 
+/* Styles for the buttons container */
+.buttons-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center align the items horizontally */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Styles for the alphabetical order button */
+#alphabetical-order-button,
+#revert-button {
+    margin: 0 10px; /* Add margin between the buttons */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Change font size */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor on hover */
+}
+
 /* Styles for the images */
+.button-link {
+    display: inline-block; /* Ensure each link is displayed in a block */
+}
+
 .button-image {
     width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    height: 150px; /* Set the height to maintain aspect ratio */
+}
+
+/* Adjustments for the second image */
+#second-image {
+    border: 2px solid red; /* Add a red border */
+    margin-left: 20px; /* Add some space to the left */
 }
